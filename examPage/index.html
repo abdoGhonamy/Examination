@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Examination</title>
+</head>
+<body>
+    
+    <div class="container">
+
+  <div class="timer-section">
+      <div class="timer-line">
+        <div class="action"></div>
+      </div>
+<p id="username" style="color: aliceblue;font-weight: bold; font-size: 1.2vw; ">Hi,<Strong style="color:#2a3a6e;"></Strong></p>
+      <div class="timer-circle">
+        <span id="time">5:00</span>
+      </div>
+    </div>
+
+        <div class="question">
+            <h1></h1> 
+        </div>
+        <div class="answers">
+            <label class="answer-1"><input type="radio" name="xx" onclick="choose(1)" value=1><P>Answer1</P></label>
+            <label class="answer-2"><input type="radio" name="xx" onclick="choose(2)" value=2><p>Answer2</p></label>
+            <label class="answer-3"><input type="radio" name="xx" onclick="choose(3)" value=3><p>Answer3</p></label>
+            <label class="answer-4"><input type="radio" name="xx" onclick="choose(4)" value=4><p>Answer4</p></label>
+            <label class="no" hidden><input type="radio" name="xx" value=0 hidden checked><p></p></label>
+        </div>
+        <div class="moving">
+          <div class="move">
+            <button id = "pre"class="pre" onclick="pre()">Previous</button>
+            <button id = "next" class="next" onclick="next()" >Next</button>
+          </div>
+            <button class="mark" onclick="mark()">Flag</button>
+        </div>
+        <div class="submit-btn"><button onclick="submit()">Submit</button></div>
+    </div>
+  <div class="marked"></div>
+   <script src="timer.js"></script>
+   <script src="ques.js"></script>
+</body>
+</html>
