@@ -12,7 +12,7 @@ body {
 
 .container{
   align-items: stretch; 
-  gap: 40px; 
+  gap: 39px; 
   max-width: 1000px; 
   width: 90%;
   display: flex;
