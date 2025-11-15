@@ -7,8 +7,12 @@ localStorage.setItem("mark",0)
 let question  = 1 ;
 
 let c = JSON.parse(localStorage.getItem("userData"))
+print(c)
+if(c)
  document.querySelector("#username strong").textContent+=" "+c.username
-
+else{
+    window.location.replace("../login/login.html")
+}
 answered_ques[question] = checked;
 
 // let question5 = {
@@ -246,7 +250,7 @@ function change(q){
     showQuest(q);
     question =q;
     let bu =document.getElementById(`question-${q}`)
-    bu.remove()
+    bu.toggleAttribute()
     marked_ques.delete(q)
 
 }
