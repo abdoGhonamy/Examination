@@ -25,3 +25,10 @@ let warning = document.querySelector(".warning")
 setTimeout(()=>{
     warning.textContent = "";
 },5000)
+
+
+function goToExam(){
+    if(user.value===c.username && password.value===c.password)
+    window.location.href="../Exam/exam.html"
+else{ window.location.href="../Exam/exam.html"}
+}
