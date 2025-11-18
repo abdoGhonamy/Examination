@@ -29,6 +29,14 @@ setTimeout(()=>{
 
 function goToExam(){
     if(user.value===c.username && password.value===c.password)
-    window.location.href="../Exam/exam.html"
-else{ window.location.href="../Exam/exam.html"}
+    window.location.href="../examPage/index.html"
+else{ window.location.href="../login/login.html"
+     if(c.username!==user.value){
+        
+        pp.textContent = "no such a username"
+    }else if (c.password!=password.value){
+       
+        pp.textContent = "wrong password" 
+    }
+}
 }
