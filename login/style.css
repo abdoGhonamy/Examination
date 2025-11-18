@@ -12,7 +12,7 @@ body {
 
 .container{
   align-items: stretch; 
-  gap: 39px; 
+  gap: 40px; 
   max-width: 1000px; 
   width: 90%;
   display: flex;
@@ -108,11 +108,12 @@ input[type="submit"]:hover {
 
   .container img, 
   .container form {
-    width: 90%;
+    width: 95%;
     height: auto;
   }
   input{
-    width: 90%;
+    width: 80%;
+    height: auto;
   }
 }
 
